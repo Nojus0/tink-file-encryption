@@ -37,14 +37,13 @@ func main() {
 
 	inputFile, _ := os.Open(*inPath)
 
-	cipherFile, err := os.Create(*outPath)
+	encryptedFile, err := os.Create(*outPath)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	associatedData := []byte{}
-	w, err := primitive.NewEncryptingWriter(cipherFile, associatedData)
+	w, err := primitive.NewEncryptingWriter(encryptedFile, []byte{})
 
 	if err != nil {
 		log.Fatal(err)
@@ -56,7 +55,7 @@ func main() {
 	if err := w.Close(); err != nil {
 		log.Fatal(err)
 	}
-	if err := cipherFile.Close(); err != nil {
+	if err := encryptedFile.Close(); err != nil {
 		log.Fatal(err)
 	}
 	if err := inputFile.Close(); err != nil {
