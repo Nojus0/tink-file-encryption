@@ -33,7 +33,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	primitive, _ := streamingaead.New(keysetHandle)
+	primitive, err := streamingaead.New(keysetHandle)
+
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	inputFile, _ := os.Open(*inPath)
 
