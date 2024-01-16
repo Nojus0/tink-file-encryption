@@ -1,14 +1,14 @@
 {
-  "primaryKeyId": 1918163892,
+  "primaryKeyId": 3214874342,
   "key": [
     {
       "keyData": {
         "typeUrl": "type.googleapis.com/google.crypto.tink.AesGcmHkdfStreamingKey",
-        "value": "EggIgIBAEBAYAxoQ/jqErHe+NbnQfHcF/LGOjg==",
+        "value": "EggIgIBAECAYAxogK+9llWETW9XdIgcuXgtcMLr9RXazio4btvByLFw7VJA=",
         "keyMaterialType": "SYMMETRIC"
       },
       "status": "ENABLED",
-      "keyId": 1918163892,
+      "keyId": 3214874342,
       "outputPrefixType": "RAW"
     }
   ]
